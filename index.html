@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Sports DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body class="container">
+    <header>
+        <h1 class="text-center py-5 fw-bold">WELCOME TO SPORTS DB OFFICIAL</h1>
+    </header>
+    <!-- End Header -->
+    <main>
+        <section class="py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="text-center pb-5">Left Side</h1>
+                    <!-- Search Section -->
+                    <div class="d-flex w-75 pb-5" role="search">
+                        <input id="input-field" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button onclick="searchAllData()" class="btn btn-success" type="submit">Search</button>
+                    </div>
+                    <!-- Card Section -->
+                    <div id="card-section">
+                        <div id="row" class="row row-cols-1 row-cols-md-2 g-4">
+                        </div>
+                    </div>
+                </div>
+                <!-- Input Field & Players Info  -->
+                <div class="col-lg-6 ps-5">
+                    <h1 class="text-center pb-5">Right Side</h1>
+                    <div>
+                        <img id="male" class="img-fluid w-75 rounded-1 pb-2 d-none" src="./img/male.jpeg" alt="male img">
+                        <img id="female" class="img-fluid w-75 rounded-1 pb-2 d-none" src="./img/female.jpg" alt="female img">
+                    </div>
+                    <!-- Team player Img -->
+                    <div id="single-player-info" class="py-5">
+
+                    </div>
+                    <!-- Single Player info -->
+                </div>
+                <!-- Players Details Info -->
+            </div>
+        </section>
+        <!-- End Section -->
+    </main>
+    <!-- End Main -->
+    <footer></footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./js/sports.js"></script>
+  </body>
+</html>
